@@ -1,0 +1,12 @@
+[
+{"carrier_id": "CAR-000001", "carrier_name": "Highland Transport Group", "scac": "XMFT", "carrier_tier": "REGIONAL", "home_city": "Boston", "dispute_window_days": 15, "payment_terms_days": 45, "onboarded_date": "2025-08-23", "status": "ACTIVE"},
+{"carrier_id": "CAR-000002", "carrier_name": "Riverbend Motor Lines Group", "scac": "XWVS", "carrier_tier": "REGIONAL", "home_city": "Charlotte", "dispute_window_days": 30, "payment_terms_days": 30, "onboarded_date": "2024-09-12", "status": "ACTIVE"},
+{"carrier_id": "CAR-000003", "carrier_name": "Redrock Carriers LLC", "scac": "XPZE", "carrier_tier": "REGIONAL", "home_city": "Las Vegas", "dispute_window_days": 45, "payment_terms_days": 60, "onboarded_date": "2021-10-31", "status": "ACTIVE"},
+{"carrier_id": "CAR-000004", "carrier_name": "Harbor Freight Group", "scac": "XLVM", "carrier_tier": "REGIONAL", "home_city": "Portland", "dispute_window_days": 15, "payment_terms_days": 45, "onboarded_date": "2018-11-23", "status": "ACTIVE"},
+{"carrier_id": "CAR-000005", "carrier_name": "Canyon Cargo LLC", "scac": "XLXM", "carrier_tier": "REGIONAL", "home_city": "Chicago", "dispute_window_days": 45, "payment_terms_days": 60, "onboarded_date": "2023-12-13", "status": "ACTIVE"},
+{"carrier_id": "CAR-000006", "carrier_name": "Redrock Logistics LLC", "scac": "XCSH", "carrier_tier": "REGIONAL", "home_city": "Boston", "dispute_window_days": 30, "payment_terms_days": 30, "onboarded_date": "2020-07-15", "status": "ACTIVE"},
+{"carrier_id": "CAR-000007", "carrier_name": "Keystone Carriers LLC", "scac": "XIZR", "carrier_tier": "NATIONAL", "home_city": "Indianapolis", "dispute_window_days": 30, "payment_terms_days": 60, "onboarded_date": "2022-08-10", "status": "ACTIVE"},
+{"carrier_id": "CAR-000008", "carrier_name": "Canyon Cargo Group", "scac": "XXME", "carrier_tier": "REGIONAL", "home_city": "Houston", "dispute_window_days": 15, "payment_terms_days": 60, "onboarded_date": "2020-02-19", "status": "ACTIVE"},
+{"carrier_id": "CAR-000009", "carrier_name": "Evergreen Transport Inc", "scac": "XKON", "carrier_tier": "REGIONAL", "home_city": "St. Louis", "dispute_window_days": 45, "payment_terms_days": 30, "onboarded_date": "2019-10-23", "status": "ACTIVE"},
+{"carrier_id": "CAR-000010", "carrier_name": "Pioneer Freight Co", "scac": "XZCC", "carrier_tier": "NATIONAL", "home_city": "Minneapolis", "dispute_window_days": 30, "payment_terms_days": 45, "onboarded_date": "2021-07-01", "status": "ACTIVE"}
+]

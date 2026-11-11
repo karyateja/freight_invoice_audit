@@ -1,0 +1,11 @@
+carrier_id,carrier_name,invoices,clean_invoice_rate,rejected_invoices,disputed_invoices,billed_amount,expected_amount,overbilled_amount,credited_amount,over_credit_notes
+CAR-000001,Highland Transport Group,112,0.875,4,8,240845.26,229459.20,2315.76,582.92,1
+CAR-000002,Riverbend Motor Lines Group,83,0.9157,1,3,141572.13,140774.82,513.29,513.29,0
+CAR-000003,Redrock Carriers LLC,46,0.8696,0,6,101094.91,98505.01,2589.91,2589.91,0
+CAR-000004,Harbor Freight Group,179,0.8939,6,13,461781.36,440185.78,3991.48,2527.21,0
+CAR-000005,Canyon Cargo LLC,50,0.84,1,7,66524.41,65334.24,678.72,678.72,1
+CAR-000006,Redrock Logistics LLC,60,0.8,1,11,84377.72,81012.81,2750.60,2750.60,0
+CAR-000007,Keystone Carriers LLC,45,0.8889,0,5,85163.24,84068.38,1094.87,934.87,1
+CAR-000008,Canyon Cargo Group,76,0.8553,4,7,98502.69,94782.81,1206.28,1206.28,0
+CAR-000009,Evergreen Transport Inc,43,0.8837,0,5,64922.01,63901.99,1020.02,1010.82,0
+CAR-000010,Pioneer Freight Co,56,0.8214,2,8,85716.36,75868.23,3486.94,3486.94,1

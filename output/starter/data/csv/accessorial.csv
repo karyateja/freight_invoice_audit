@@ -1,0 +1,8 @@
+accessorial_code,accessorial_name,charge_basis,evidence_rule,default_tariff_amount
+ACC-APPT,Delivery appointment,FLAT,delivery_record.appointment_required = 1,45.00
+ACC-DETN,Detention at delivery,PER_HOUR,delivery_record.wait_minutes > 120; hours = ceil((wait_minutes - 120) / 60),95.00
+ACC-HAZM,Hazardous materials handling,FLAT,shipment.hazmat = 1,95.00
+ACC-INSD,Inside delivery,FLAT,delivery_record.inside_delivery = 1,160.00
+ACC-LFTG,Liftgate at delivery,FLAT,delivery_record.liftgate_used = 1,125.00
+ACC-LMTA,Limited access delivery,FLAT,delivery_record.limited_access = 1,130.00
+ACC-RESD,Residential delivery,FLAT,delivery_record.residential_delivery = 1,140.00

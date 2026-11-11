@@ -1,0 +1,11 @@
+carrier_id,carrier_name,scac,carrier_tier,home_city,dispute_window_days,payment_terms_days,onboarded_date,status
+CAR-000001,Highland Transport Group,XMFT,REGIONAL,Boston,15,45,2025-08-23,ACTIVE
+CAR-000002,Riverbend Motor Lines Group,XWVS,REGIONAL,Charlotte,30,30,2024-09-12,ACTIVE
+CAR-000003,Redrock Carriers LLC,XPZE,REGIONAL,Las Vegas,45,60,2021-10-31,ACTIVE
+CAR-000004,Harbor Freight Group,XLVM,REGIONAL,Portland,15,45,2018-11-23,ACTIVE
+CAR-000005,Canyon Cargo LLC,XLXM,REGIONAL,Chicago,45,60,2023-12-13,ACTIVE
+CAR-000006,Redrock Logistics LLC,XCSH,REGIONAL,Boston,30,30,2020-07-15,ACTIVE
+CAR-000007,Keystone Carriers LLC,XIZR,NATIONAL,Indianapolis,30,60,2022-08-10,ACTIVE
+CAR-000008,Canyon Cargo Group,XXME,REGIONAL,Houston,15,60,2020-02-19,ACTIVE
+CAR-000009,Evergreen Transport Inc,XKON,REGIONAL,St. Louis,45,30,2019-10-23,ACTIVE
+CAR-000010,Pioneer Freight Co,XZCC,NATIONAL,Minneapolis,30,45,2021-07-01,ACTIVE

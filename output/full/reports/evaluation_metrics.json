@@ -1,0 +1,277 @@
+{
+  "expected_charge_reproduction": {
+    "lines": 41167,
+    "lines_exact_match": 41167,
+    "line_match_rate": 1.0,
+    "invoices": 15000,
+    "invoices_exact_match": 15000,
+    "invoice_match_rate": 1.0,
+    "sum_abs_line_error": 0.0
+  },
+  "exception_detection": {
+    "level": "invoice (predicted root-cause set vs labelled issue_type)",
+    "per_issue_type": {
+      "DIM_WEIGHT_MISMATCH": {
+        "tp": 290,
+        "fp": 0,
+        "fn": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "DUPLICATE_INVOICE": {
+        "tp": 300,
+        "fp": 0,
+        "fn": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "FUEL_SURCHARGE_MISMATCH": {
+        "tp": 145,
+        "fp": 0,
+        "fn": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "INVALID_ACCESSORIAL": {
+        "tp": 362,
+        "fp": 0,
+        "fn": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "RATE_CARD_EXPIRED": {
+        "tp": 217,
+        "fp": 0,
+        "fn": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "SURCHARGE_DUPLICATED": {
+        "tp": 290,
+        "fp": 0,
+        "fn": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "UNKNOWN_SHIPMENT": {
+        "tp": 75,
+        "fp": 0,
+        "fn": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "WEIGHT_TIER_MISAPPLIED": {
+        "tp": 290,
+        "fp": 0,
+        "fn": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      }
+    },
+    "micro": {
+      "tp": 1969,
+      "fp": 0,
+      "fn": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0
+    },
+    "exact_label_match_rate": 1.0,
+    "false_positive_rate_non_anomalous": 0.0,
+    "by_scenario_class": {
+      "ANOMALY": {
+        "invoices": 1969,
+        "with_exception": 1969
+      },
+      "BOUNDARY:RATE_CARD_EFFECTIVE_BOUNDARY": {
+        "invoices": 63,
+        "with_exception": 0
+      },
+      "BOUNDARY:ROUNDING_WITHIN_TOLERANCE": {
+        "invoices": 145,
+        "with_exception": 0
+      },
+      "BOUNDARY:SUPPLEMENTAL_INVOICE_LEGITIMATE": {
+        "invoices": 150,
+        "with_exception": 0
+      },
+      "BOUNDARY:TIER_BREAK_EXACT_WEIGHT": {
+        "invoices": 73,
+        "with_exception": 0
+      },
+      "CLEAN": {
+        "invoices": 12600,
+        "with_exception": 0
+      }
+    }
+  },
+  "decision_accuracy": {
+    "accuracy": 1.0,
+    "confusion_expected_vs_predicted": {
+      "APPROVE->APPROVE": 13162,
+      "DISPUTE->DISPUTE": 1463,
+      "REJECT->REJECT": 375
+    }
+  },
+  "explanation_completeness": {
+    "lines_with_unexplained_variance": 0,
+    "rejected_invoices_not_fully_explained": 0,
+    "invoices_variance_equals_exceptions_plus_tolerance": 15000,
+    "invoices": 15000
+  },
+  "credit_reconciliation": {
+    "over_credit_detection": {
+      "tp": 75,
+      "fp": 0,
+      "fn": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0
+    },
+    "approved_disputes": 1951,
+    "approved_amount": 301984.84,
+    "credit_notes": 1884,
+    "credit_issued_amount": 294698.73,
+    "credit_reconciled_amount": 290504.34,
+    "credit_excess_amount": 4194.39,
+    "approved_awaiting_credit": 67,
+    "credits_without_approved_dispute": 0,
+    "credited_disputes_reconciled_exactly": 1884
+  },
+  "business_kpis": {
+    "invoices_audited": 15000,
+    "billed_amount": 25872644.69,
+    "expected_amount": 24892209.65,
+    "invoice_exception_rate": 0.1313,
+    "decisions": {
+      "APPROVE": 13162,
+      "DISPUTE": 1463,
+      "REJECT": 375
+    },
+    "exceptions_by_type": {
+      "CREDIT_EXCEEDS_EXCEPTION": 75,
+      "DIM_WEIGHT_MISMATCH": 580,
+      "DUPLICATE_INVOICE": 300,
+      "FUEL_SURCHARGE_MISMATCH": 145,
+      "INVALID_ACCESSORIAL": 362,
+      "RATE_CARD_EXPIRED": 583,
+      "SURCHARGE_DUPLICATED": 290,
+      "UNKNOWN_SHIPMENT": 75,
+      "WEIGHT_TIER_MISAPPLIED": 580
+    },
+    "exceptions_by_status": {
+      "APPROVED": 67,
+      "CLOSED_INVOICE_REJECTED": 375,
+      "CLOSED_UNDERBILLED_ACCEPTED": 411,
+      "CLOSED_WAIVED": 62,
+      "CREDITED": 1884,
+      "DISPUTED": 83,
+      "ESCALATED": 75,
+      "OPEN": 12,
+      "PENDING_MANAGER_REVIEW": 1,
+      "REJECTED_LATE": 20
+    },
+    "overbilling_identified_amount": 319772.86,
+    "rejected_invoice_amount_prevented": 671492.89,
+    "disputed_amount": 316877.55,
+    "lost_to_late_dispute_amount": 3712.96,
+    "late_dispute_rejections": 20,
+    "net_savings_amount": 961997.23,
+    "savings_rate_of_billed": 0.0372
+  },
+  "data_profile": {
+    "shipments": 20000,
+    "shipment_status": {
+      "BOOKED": 216,
+      "DELIVERED": 19488,
+      "IN_TRANSIT": 296
+    },
+    "shipments_per_carrier": {
+      "min": 70,
+      "median": 128.0,
+      "max": 1874
+    },
+    "service_mix": {
+      "EXPEDITED": 0.2241,
+      "GUARANTEED": 0.0771,
+      "STANDARD": 0.6988
+    },
+    "billable_weight_lb": {
+      "p10": 728.7,
+      "p50": 2662.0,
+      "p90": 7372.1,
+      "max": 20000.0
+    },
+    "weight_tier_mix": {
+      "T1": 0.0282,
+      "T2": 0.1363,
+      "T3": 0.2253,
+      "T4": 0.3844,
+      "T5": 0.1885,
+      "T6": 0.0375
+    },
+    "dim_weight_governs_share": 0.3247,
+    "carrier_reweigh_share": 0.2499,
+    "reweigh_vs_declared_weight_change_mean": 0.0649,
+    "legs_per_shipment": {
+      "1": 9468,
+      "2": 8496,
+      "3": 2036
+    },
+    "on_time_delivery_rate": 0.8281,
+    "accessorial_evidence_rate": {
+      "liftgate_used": 0.1815,
+      "residential_delivery": 0.0831,
+      "inside_delivery": 0.0399,
+      "appointment_required": 0.2215,
+      "limited_access": 0.0526
+    },
+    "detention_evidence_rate": 0.1175,
+    "hazmat_rate": 0.0342,
+    "invoice_lag_days_after_delivery": {
+      "p50": 6,
+      "p90": 10
+    },
+    "lines_per_invoice": {
+      "1": 150,
+      "2": 6477,
+      "3": 5907,
+      "4": 2023,
+      "5": 411,
+      "6": 29,
+      "7": 3
+    },
+    "invoice_billed_total": {
+      "p10": 450.77,
+      "p50": 1308.19,
+      "p90": 3539.09,
+      "max": 16507.06
+    },
+    "scenario_mix": {
+      "ANOMALY:DIM_WEIGHT_MISMATCH": 290,
+      "ANOMALY:DUPLICATE_INVOICE": 300,
+      "ANOMALY:FUEL_SURCHARGE_MISMATCH": 145,
+      "ANOMALY:INVALID_ACCESSORIAL": 362,
+      "ANOMALY:RATE_CARD_EXPIRED": 217,
+      "ANOMALY:SURCHARGE_DUPLICATED": 290,
+      "ANOMALY:UNKNOWN_SHIPMENT": 75,
+      "ANOMALY:WEIGHT_TIER_MISAPPLIED": 290,
+      "BOUNDARY:RATE_CARD_EFFECTIVE_BOUNDARY": 63,
+      "BOUNDARY:ROUNDING_WITHIN_TOLERANCE": 145,
+      "BOUNDARY:SUPPLEMENTAL_INVOICE_LEGITIMATE": 150,
+      "BOUNDARY:TIER_BREAK_EXACT_WEIGHT": 73,
+      "CLEAN:-": 12600
+    }
+  },
+  "generator_notes": {
+    "anomaly_shortfall": {}
+  }
+}

@@ -1,0 +1,61 @@
+lane_id,origin_city,origin_state,dest_city,dest_state,distance_miles,distance_band
+LANE-000001,Atlanta,GA,Reno,NV,2329,LONG
+LANE-000002,Atlanta,GA,St. Louis,MO,547,MEDIUM
+LANE-000003,Boston,MA,Las Vegas,NV,2772,LONG
+LANE-000004,Boston,MA,San Antonio,TX,2065,LONG
+LANE-000005,Charlotte,NC,Dallas,TX,1086,MEDIUM
+LANE-000006,Charlotte,NC,Philadelphia,PA,527,MEDIUM
+LANE-000007,Chicago,IL,Jacksonville,FL,1011,MEDIUM
+LANE-000008,Chicago,IL,Oakland,CA,2160,LONG
+LANE-000009,Chicago,IL,Phoenix,AZ,1699,LONG
+LANE-000010,Chicago,IL,Seattle,WA,2028,LONG
+LANE-000011,Columbus,OH,Atlanta,GA,510,MEDIUM
+LANE-000012,Columbus,OH,Charlotte,NC,407,SHORT
+LANE-000013,Columbus,OH,Harrisburg,PA,379,SHORT
+LANE-000014,Columbus,OH,Indianapolis,IN,197,SHORT
+LANE-000015,Columbus,OH,San Antonio,TX,1333,LONG
+LANE-000016,Columbus,OH,Seattle,WA,2350,LONG
+LANE-000017,Denver,CO,Los Angeles,CA,971,MEDIUM
+LANE-000018,Detroit,MI,Columbus,OH,192,SHORT
+LANE-000019,Detroit,MI,Jacksonville,FL,974,MEDIUM
+LANE-000020,Harrisburg,PA,Boston,MA,392,SHORT
+LANE-000021,Harrisburg,PA,Detroit,MI,409,SHORT
+LANE-000022,Houston,TX,Denver,CO,1028,MEDIUM
+LANE-000023,Houston,TX,Oakland,CA,1913,LONG
+LANE-000024,Indianapolis,IN,Denver,CO,1168,MEDIUM
+LANE-000025,Indianapolis,IN,Oakland,CA,2266,LONG
+LANE-000026,Jacksonville,FL,Harrisburg,PA,863,MEDIUM
+LANE-000027,Jacksonville,FL,Louisville,KY,696,MEDIUM
+LANE-000028,Kansas City,MO,San Antonio,TX,825,MEDIUM
+LANE-000029,Las Vegas,NV,Dallas,TX,1251,LONG
+LANE-000030,Las Vegas,NV,Kansas City,MO,1334,LONG
+LANE-000031,Las Vegas,NV,Minneapolis,MN,1513,LONG
+LANE-000032,Las Vegas,NV,New York,NY,2606,LONG
+LANE-000033,Las Vegas,NV,Phoenix,AZ,300,SHORT
+LANE-000034,Los Angeles,CA,Boston,MA,3031,LONG
+LANE-000035,Los Angeles,CA,Chicago,IL,2039,LONG
+LANE-000036,Louisville,KY,Atlanta,GA,375,SHORT
+LANE-000037,Louisville,KY,Charlotte,NC,401,SHORT
+LANE-000038,Louisville,KY,Detroit,MI,370,SHORT
+LANE-000039,Louisville,KY,Memphis,TN,374,SHORT
+LANE-000040,Memphis,TN,Charlotte,NC,608,MEDIUM
+LANE-000041,Miami,FL,Memphis,TN,1022,MEDIUM
+LANE-000042,Miami,FL,St. Louis,MO,1243,LONG
+LANE-000043,Minneapolis,MN,Los Angeles,CA,1780,LONG
+LANE-000044,Minneapolis,MN,New York,NY,1189,MEDIUM
+LANE-000045,Nashville,TN,Dallas,TX,721,MEDIUM
+LANE-000046,Nashville,TN,Harrisburg,PA,710,MEDIUM
+LANE-000047,New York,NY,Dallas,TX,1604,LONG
+LANE-000048,New York,NY,Houston,TX,1659,LONG
+LANE-000049,New York,NY,Jacksonville,FL,978,MEDIUM
+LANE-000050,New York,NY,Oakland,CA,2992,LONG
+LANE-000051,Oakland,CA,Chicago,IL,2160,LONG
+LANE-000052,Oakland,CA,Las Vegas,NV,479,SHORT
+LANE-000053,Philadelphia,PA,Indianapolis,IN,682,MEDIUM
+LANE-000054,Philadelphia,PA,Minneapolis,MN,1150,MEDIUM
+LANE-000055,Portland,OR,Atlanta,GA,2538,LONG
+LANE-000056,Portland,OR,Harrisburg,PA,2707,LONG
+LANE-000057,Reno,NV,Columbus,OH,2272,LONG
+LANE-000058,Salt Lake City,UT,Jacksonville,FL,2146,LONG
+LANE-000059,St. Louis,MO,Denver,CO,930,MEDIUM
+LANE-000060,St. Louis,MO,Memphis,TN,281,SHORT

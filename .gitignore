@@ -1,0 +1,9 @@
+__pycache__/
+*.pyc
+.venv/
+# Full-scale data exports are ~290 MB; regenerate with `python -m freight_audit run --scale full`.
+# Reports, ground truth, docs and manifest (with checksums) for full scale ARE committed.
+output/full/data/
+# Datasets generated from the web UI with a non-default seed or custom volumes (regenerable).
+output/*-seed*/
+output/*-custom-*/

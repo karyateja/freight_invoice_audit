@@ -1,0 +1,9 @@
+[
+{"accessorial_code": "ACC-APPT", "accessorial_name": "Delivery appointment", "charge_basis": "FLAT", "evidence_rule": "delivery_record.appointment_required = 1", "default_tariff_amount": 45.0},
+{"accessorial_code": "ACC-DETN", "accessorial_name": "Detention at delivery", "charge_basis": "PER_HOUR", "evidence_rule": "delivery_record.wait_minutes > 120; hours = ceil((wait_minutes - 120) / 60)", "default_tariff_amount": 95.0},
+{"accessorial_code": "ACC-HAZM", "accessorial_name": "Hazardous materials handling", "charge_basis": "FLAT", "evidence_rule": "shipment.hazmat = 1", "default_tariff_amount": 95.0},
+{"accessorial_code": "ACC-INSD", "accessorial_name": "Inside delivery", "charge_basis": "FLAT", "evidence_rule": "delivery_record.inside_delivery = 1", "default_tariff_amount": 160.0},
+{"accessorial_code": "ACC-LFTG", "accessorial_name": "Liftgate at delivery", "charge_basis": "FLAT", "evidence_rule": "delivery_record.liftgate_used = 1", "default_tariff_amount": 125.0},
+{"accessorial_code": "ACC-LMTA", "accessorial_name": "Limited access delivery", "charge_basis": "FLAT", "evidence_rule": "delivery_record.limited_access = 1", "default_tariff_amount": 130.0},
+{"accessorial_code": "ACC-RESD", "accessorial_name": "Residential delivery", "charge_basis": "FLAT", "evidence_rule": "delivery_record.residential_delivery = 1", "default_tariff_amount": 140.0}
+]

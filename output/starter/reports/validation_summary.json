@@ -1,0 +1,1653 @@
+{
+  "overall": "PASS",
+  "checks_total": 175,
+  "checks_failed": 0,
+  "by_category": {
+    "ARITHMETIC": {
+      "PASS": 6,
+      "FAIL": 0
+    },
+    "DATE_ORDER": {
+      "PASS": 3,
+      "FAIL": 0
+    },
+    "DUPLICATE": {
+      "PASS": 2,
+      "FAIL": 0
+    },
+    "ENUM": {
+      "PASS": 21,
+      "FAIL": 0
+    },
+    "FOREIGN_KEY": {
+      "PASS": 32,
+      "FAIL": 0
+    },
+    "GROUND_TRUTH": {
+      "PASS": 2,
+      "FAIL": 0
+    },
+    "ID_FORMAT": {
+      "PASS": 21,
+      "FAIL": 0
+    },
+    "JOIN": {
+      "PASS": 4,
+      "FAIL": 0
+    },
+    "LIFECYCLE": {
+      "PASS": 5,
+      "FAIL": 0
+    },
+    "PRIMARY_KEY": {
+      "PASS": 21,
+      "FAIL": 0
+    },
+    "REQUIRED": {
+      "PASS": 21,
+      "FAIL": 0
+    },
+    "TYPE": {
+      "PASS": 21,
+      "FAIL": 0
+    },
+    "UNIQUE": {
+      "PASS": 16,
+      "FAIL": 0
+    }
+  },
+  "checks": [
+    {
+      "check_id": "PK-carrier",
+      "category": "PRIMARY_KEY",
+      "description": "carrier: primary key (carrier_id) unique",
+      "status": "PASS",
+      "violations": 0,
+      "expected_violations": 0,
+      "samples": []
+    },
+    {
+      "check_id": "REQ-carrier",
+      "category": "REQUIRED",
+      "description": "carrier: required fields populated",
+      "status": "PASS",
+      "violations": 0,
+      "expected_violations": 0,
+      "samples": []
+    },
+    {
+      "check_id": "TYPE-carrier",
+      "category": "TYPE",
+      "description": "carrier: values have declared types",
+      "status": "PASS",
+      "violations": 0,
+      "expected_violations": 0,
+      "samples": []
+    },
+    {
+      "check_id": "ENUM-carrier",
+      "category": "ENUM",
+      "description": "carrier: values within allowed enums",
+      "status": "PASS",
+      "violations": 0,
+      "expected_violations": 0,
+      "samples": []
+    },
+    {
+      "check_id": "FMT-carrier",
+      "category": "ID_FORMAT",
+      "description": "carrier: IDs/codes match naming convention",
+      "status": "PASS",
+      "violations": 0,
+      "expected_violations": 0,
+      "samples": []
+    },
+    {
+      "check_id": "UQ-carrier.carrier_name",
+      "category": "UNIQUE",
+      "description": "carrier.carrier_name unique",
+      "status": "PASS",
+      "violations": 0,
+      "expected_violations": 0,
+      "samples": []
+    },
+    {
+      "check_id": "UQ-carrier.scac",
+      "category": "UNIQUE",
+      "description": "carrier.scac unique",
+      "status": "PASS",
+      "violations": 0,
+      "expected_violations": 0,
+      "samples": []
+    },
+    {
+      "check_id": "PK-lane",
+      "category": "PRIMARY_KEY",
+      "description": "lane: primary key (lane_id) unique",
+      "status": "PASS",
+      "violations": 0,
+      "expected_violations": 0,
+      "samples": []
+    },
+    {
+      "check_id": "REQ-lane",
+      "category": "REQUIRED",
+      "description": "lane: required fields populated",
+      "status": "PASS",
+      "violations": 0,
+      "expected_violations": 0,
+      "samples": []
+    },
+    {
+      "check_id": "TYPE-lane",
+      "category": "TYPE",
+      "description": "lane: values have declared types",
+      "status": "PASS",
+      "violations": 0,
+      "expected_violations": 0,
+      "samples": []
+    },
+    {
+      "check_id": "ENUM-lane",
+      "category": "ENUM",
+      "description": "lane: values within allowed enums",
+      "status": "PASS",
+      "violations": 0,
+      "expected_violations": 0,
+      "samples": []
+    },
+    {
+      "check_id": "FMT-lane",
+      "category": "ID_FORMAT",
+      "description": "lane: IDs/codes match naming convention",
+      "status": "PASS",
+      "violations": 0,
+      "expected_violations": 0,
+      "samples": []
+    },
+    {
+      "check_id": "UQ-lane(origin_city,dest_city)",
+      "category": "UNIQUE",
+      "description": "lane: (origin_city, dest_city) unique",
+      "status": "PASS",
+      "violations": 0,
+      "expected_violations": 0,
+      "samples": []
+    },
+    {
+      "check_id": "PK-supplier",
+      "category": "PRIMARY_KEY",
+      "description": "supplier: primary key (supplier_id) unique",
+      "status": "PASS",
+      "violations": 0,
+      "expected_violations": 0,
+      "samples": []
+    },
+    {
+      "check_id": "REQ-supplier",
+      "category": "REQUIRED",
+      "description": "supplier: required fields populated",
+      "status": "PASS",
+      "violations": 0,
+      "expected_violations": 0,
+      "samples": []
+    },
+    {
+      "check_id": "TYPE-supplier",
+      "category": "TYPE",
+      "description": "supplier: values have declared types",
+      "status": "PASS",
+      "violations": 0,
+      "expected_violations": 0,
+      "samples": []
+    },
+    {
+      "check_id": "ENUM-supplier",
+      "category": "ENUM",
+      "description": "supplier: values within allowed enums",
+      "status": "PASS",
+      "violations": 0,
+      "expected_violations": 0,
+      "samples": []
+    },
+    {
+      "check_id": "FMT-supplier",
+      "category": "ID_FORMAT",
+      "description": "supplier: IDs/codes match naming convention",
+      "status": "PASS",
+      "violations": 0,
+      "expected_violations": 0,
+      "samples": []
+    },
+    {
+      "check_id": "UQ-supplier.supplier_name",
+      "category": "UNIQUE",
+      "description": "supplier.supplier_name unique",
+      "status": "PASS",
+      "violations": 0,
+      "expected_violations": 0,
+      "samples": []
+    },
+    {
+      "check_id": "PK-accessorial",
+      "category": "PRIMARY_KEY",
+      "description": "accessorial: primary key (accessorial_code) unique",
+      "status": "PASS",
+      "violations": 0,
+      "expected_violations": 0,
+      "samples": []
+    },
+    {
+      "check_id": "REQ-accessorial",
+      "category": "REQUIRED",
+      "description": "accessorial: required fields populated",
+      "status": "PASS",
+      "violations": 0,
+      "expected_violations": 0,
+      "samples": []
+    },
+    {
+      "check_id": "TYPE-accessorial",
+      "category": "TYPE",
+      "description": "accessorial: values have declared types",
+      "status": "PASS",
+      "violations": 0,
+      "expected_violations": 0,
+      "samples": []
+    },
+    {
+      "check_id": "ENUM-accessorial",
+      "category": "ENUM",
+      "description": "accessorial: values within allowed enums",
+      "status": "PASS",
+      "violations": 0,
+      "expected_violations": 0,
+      "samples": []
+    },
+    {
+      "check_id": "FMT-accessorial",
+      "category": "ID_FORMAT",
+      "description": "accessorial: IDs/codes match naming convention",
+      "status": "PASS",
+      "violations": 0,
+      "expected_violations": 0,
+      "samples": []
+    },
+    {
+      "check_id": "PK-rate_card",
+      "category": "PRIMARY_KEY",
+      "description": "rate_card: primary key (rate_card_id) unique",
+      "status": "PASS",
+      "violations": 0,
+      "expected_violations": 0,
+      "samples": []
+    },
+    {
+      "check_id": "REQ-rate_card",
+      "category": "REQUIRED",
+      "description": "rate_card: required fields populated",
+      "status": "PASS",
+      "violations": 0,
+      "expected_violations": 0,
+      "samples": []
+    },
+    {
+      "check_id": "TYPE-rate_card",
+      "category": "TYPE",
+      "description": "rate_card: values have declared types",
+      "status": "PASS",
+      "violations": 0,
+      "expected_violations": 0,
+      "samples": []
+    },
+    {
+      "check_id": "ENUM-rate_card",
+      "category": "ENUM",
+      "description": "rate_card: values within allowed enums",
+      "status": "PASS",
+      "violations": 0,
+      "expected_violations": 0,
+      "samples": []
+    },
+    {
+      "check_id": "FMT-rate_card",
+      "category": "ID_FORMAT",
+      "description": "rate_card: IDs/codes match naming convention",
+      "status": "PASS",
+      "violations": 0,
+      "expected_violations": 0,
+      "samples": []
+    },
+    {
+      "check_id": "UQ-rate_card(carrier_id,version_seq)",
+      "category": "UNIQUE",
+      "description": "rate_card: (carrier_id, version_seq) unique",
+      "status": "PASS",
+      "violations": 0,
+      "expected_violations": 0,
+      "samples": []
+    },
+    {
+      "check_id": "PK-rate_card_line",
+      "category": "PRIMARY_KEY",
+      "description": "rate_card_line: primary key (rate_line_id) unique",
+      "status": "PASS",
+      "violations": 0,
+      "expected_violations": 0,
+      "samples": []
+    },
+    {
+      "check_id": "REQ-rate_card_line",
+      "category": "REQUIRED",
+      "description": "rate_card_line: required fields populated",
+      "status": "PASS",
+      "violations": 0,
+      "expected_violations": 0,
+      "samples": []
+    },
+    {
+      "check_id": "TYPE-rate_card_line",
+      "category": "TYPE",
+      "description": "rate_card_line: values have declared types",
+      "status": "PASS",
+      "violations": 0,
+      "expected_violations": 0,
+      "samples": []
+    },
+    {
+      "check_id": "ENUM-rate_card_line",
+      "category": "ENUM",
+      "description": "rate_card_line: values within allowed enums",
+      "status": "PASS",
+      "violations": 0,
+      "expected_violations": 0,
+      "samples": []
+    },
+    {
+      "check_id": "FMT-rate_card_line",
+      "category": "ID_FORMAT",
+      "description": "rate_card_line: IDs/codes match naming convention",
+      "status": "PASS",
+      "violations": 0,
+      "expected_violations": 0,
+      "samples": []
+    },
+    {
+      "check_id": "UQ-rate_card_line(rate_card_id,lane_id,service_level,weight_tier)",
+      "category": "UNIQUE",
+      "description": "rate_card_line: (rate_card_id, lane_id, service_level, weight_tier) unique",
+      "status": "PASS",
+      "violations": 0,
+      "expected_violations": 0,
+      "samples": []
+    },
+    {
+      "check_id": "PK-rate_card_accessorial",
+      "category": "PRIMARY_KEY",
+      "description": "rate_card_accessorial: primary key (rate_card_id, accessorial_code) unique",
+      "status": "PASS",
+      "violations": 0,
+      "expected_violations": 0,
+      "samples": []
+    },
+    {
+      "check_id": "REQ-rate_card_accessorial",
+      "category": "REQUIRED",
+      "description": "rate_card_accessorial: required fields populated",
+      "status": "PASS",
+      "violations": 0,
+      "expected_violations": 0,
+      "samples": []
+    },
+    {
+      "check_id": "TYPE-rate_card_accessorial",
+      "category": "TYPE",
+      "description": "rate_card_accessorial: values have declared types",
+      "status": "PASS",
+      "violations": 0,
+      "expected_violations": 0,
+      "samples": []
+    },
+    {
+      "check_id": "ENUM-rate_card_accessorial",
+      "category": "ENUM",
+      "description": "rate_card_accessorial: values within allowed enums",
+      "status": "PASS",
+      "violations": 0,
+      "expected_violations": 0,
+      "samples": []
+    },
+    {
+      "check_id": "FMT-rate_card_accessorial",
+      "category": "ID_FORMAT",
+      "description": "rate_card_accessorial: IDs/codes match naming convention",
+      "status": "PASS",
+      "violations": 0,
+      "expected_violations": 0,
+      "samples": []
+    },
+    {
+      "check_id": "PK-shipment",
+      "category": "PRIMARY_KEY",
+      "description": "shipment: primary key (shipment_id) unique",
+      "status": "PASS",
+      "violations": 0,
+      "expected_violations": 0,
+      "samples": []
+    },
+    {
+      "check_id": "REQ-shipment",
+      "category": "REQUIRED",
+      "description": "shipment: required fields populated",
+      "status": "PASS",
+      "violations": 0,
+      "expected_violations": 0,
+      "samples": []
+    },
+    {
+      "check_id": "TYPE-shipment",
+      "category": "TYPE",
+      "description": "shipment: values have declared types",
+      "status": "PASS",
+      "violations": 0,
+      "expected_violations": 0,
+      "samples": []
+    },
+    {
+      "check_id": "ENUM-shipment",
+      "category": "ENUM",
+      "description": "shipment: values within allowed enums",
+      "status": "PASS",
+      "violations": 0,
+      "expected_violations": 0,
+      "samples": []
+    },
+    {
+      "check_id": "FMT-shipment",
+      "category": "ID_FORMAT",
+      "description": "shipment: IDs/codes match naming convention",
+      "status": "PASS",
+      "violations": 0,
+      "expected_violations": 0,
+      "samples": []
+    },
+    {
+      "check_id": "PK-shipment_leg",
+      "category": "PRIMARY_KEY",
+      "description": "shipment_leg: primary key (leg_id) unique",
+      "status": "PASS",
+      "violations": 0,
+      "expected_violations": 0,
+      "samples": []
+    },
+    {
+      "check_id": "REQ-shipment_leg",
+      "category": "REQUIRED",
+      "description": "shipment_leg: required fields populated",
+      "status": "PASS",
+      "violations": 0,
+      "expected_violations": 0,
+      "samples": []
+    },
+    {
+      "check_id": "TYPE-shipment_leg",
+      "category": "TYPE",
+      "description": "shipment_leg: values have declared types",
+      "status": "PASS",
+      "violations": 0,
+      "expected_violations": 0,
+      "samples": []
+    },
+    {
+      "check_id": "ENUM-shipment_leg",
+      "category": "ENUM",
+      "description": "shipment_leg: values within allowed enums",
+      "status": "PASS",
+      "violations": 0,
+      "expected_violations": 0,
+      "samples": []
+    },
+    {
+      "check_id": "FMT-shipment_leg",
+      "category": "ID_FORMAT",
+      "description": "shipment_leg: IDs/codes match naming convention",
+      "status": "PASS",
+      "violations": 0,
+      "expected_violations": 0,
+      "samples": []
+    },
+    {
+      "check_id": "UQ-shipment_leg(shipment_id,leg_seq)",
+      "category": "UNIQUE",
+      "description": "shipment_leg: (shipment_id, leg_seq) unique",
+      "status": "PASS",
+      "violations": 0,
+      "expected_violations": 0,
+      "samples": []
+    },
+    {
+      "check_id": "PK-weight_measurement",
+      "category": "PRIMARY_KEY",
+      "description": "weight_measurement: primary key (measurement_id) unique",
+      "status": "PASS",
+      "violations": 0,
+      "expected_violations": 0,
+      "samples": []
+    },
+    {
+      "check_id": "REQ-weight_measurement",
+      "category": "REQUIRED",
+      "description": "weight_measurement: required fields populated",
+      "status": "PASS",
+      "violations": 0,
+      "expected_violations": 0,
+      "samples": []
+    },
+    {
+      "check_id": "TYPE-weight_measurement",
+      "category": "TYPE",
+      "description": "weight_measurement: values have declared types",
+      "status": "PASS",
+      "violations": 0,
+      "expected_violations": 0,
+      "samples": []
+    },
+    {
+      "check_id": "ENUM-weight_measurement",
+      "category": "ENUM",
+      "description": "weight_measurement: values within allowed enums",
+      "status": "PASS",
+      "violations": 0,
+      "expected_violations": 0,
+      "samples": []
+    },
+    {
+      "check_id": "FMT-weight_measurement",
+      "category": "ID_FORMAT",
+      "description": "weight_measurement: IDs/codes match naming convention",
+      "status": "PASS",
+      "violations": 0,
+      "expected_violations": 0,
+      "samples": []
+    },
+    {
+      "check_id": "PK-delivery_record",
+      "category": "PRIMARY_KEY",
+      "description": "delivery_record: primary key (delivery_id) unique",
+      "status": "PASS",
+      "violations": 0,
+      "expected_violations": 0,
+      "samples": []
+    },
+    {
+      "check_id": "REQ-delivery_record",
+      "category": "REQUIRED",
+      "description": "delivery_record: required fields populated",
+      "status": "PASS",
+      "violations": 0,
+      "expected_violations": 0,
+      "samples": []
+    },
+    {
+      "check_id": "TYPE-delivery_record",
+      "category": "TYPE",
+      "description": "delivery_record: values have declared types",
+      "status": "PASS",
+      "violations": 0,
+      "expected_violations": 0,
+      "samples": []
+    },
+    {
+      "check_id": "ENUM-delivery_record",
+      "category": "ENUM",
+      "description": "delivery_record: values within allowed enums",
+      "status": "PASS",
+      "violations": 0,
+      "expected_violations": 0,
+      "samples": []
+    },
+    {
+      "check_id": "FMT-delivery_record",
+      "category": "ID_FORMAT",
+      "description": "delivery_record: IDs/codes match naming convention",
+      "status": "PASS",
+      "violations": 0,
+      "expected_violations": 0,
+      "samples": []
+    },
+    {
+      "check_id": "UQ-delivery_record.shipment_id",
+      "category": "UNIQUE",
+      "description": "delivery_record.shipment_id unique",
+      "status": "PASS",
+      "violations": 0,
+      "expected_violations": 0,
+      "samples": []
+    },
+    {
+      "check_id": "UQ-delivery_record.pod_reference",
+      "category": "UNIQUE",
+      "description": "delivery_record.pod_reference unique",
+      "status": "PASS",
+      "violations": 0,
+      "expected_violations": 0,
+      "samples": []
+    },
+    {
+      "check_id": "PK-freight_invoice",
+      "category": "PRIMARY_KEY",
+      "description": "freight_invoice: primary key (invoice_id) unique",
+      "status": "PASS",
+      "violations": 0,
+      "expected_violations": 0,
+      "samples": []
+    },
+    {
+      "check_id": "REQ-freight_invoice",
+      "category": "REQUIRED",
+      "description": "freight_invoice: required fields populated",
+      "status": "PASS",
+      "violations": 0,
+      "expected_violations": 0,
+      "samples": []
+    },
+    {
+      "check_id": "TYPE-freight_invoice",
+      "category": "TYPE",
+      "description": "freight_invoice: values have declared types",
+      "status": "PASS",
+      "violations": 0,
+      "expected_violations": 0,
+      "samples": []
+    },
+    {
+      "check_id": "ENUM-freight_invoice",
+      "category": "ENUM",
+      "description": "freight_invoice: values within allowed enums",
+      "status": "PASS",
+      "violations": 0,
+      "expected_violations": 0,
+      "samples": []
+    },
+    {
+      "check_id": "FMT-freight_invoice",
+      "category": "ID_FORMAT",
+      "description": "freight_invoice: IDs/codes match naming convention",
+      "status": "PASS",
+      "violations": 0,
+      "expected_violations": 0,
+      "samples": []
+    },
+    {
+      "check_id": "PK-invoice_line",
+      "category": "PRIMARY_KEY",
+      "description": "invoice_line: primary key (invoice_line_id) unique",
+      "status": "PASS",
+      "violations": 0,
+      "expected_violations": 0,
+      "samples": []
+    },
+    {
+      "check_id": "REQ-invoice_line",
+      "category": "REQUIRED",
+      "description": "invoice_line: required fields populated",
+      "status": "PASS",
+      "violations": 0,
+      "expected_violations": 0,
+      "samples": []
+    },
+    {
+      "check_id": "TYPE-invoice_line",
+      "category": "TYPE",
+      "description": "invoice_line: values have declared types",
+      "status": "PASS",
+      "violations": 0,
+      "expected_violations": 0,
+      "samples": []
+    },
+    {
+      "check_id": "ENUM-invoice_line",
+      "category": "ENUM",
+      "description": "invoice_line: values within allowed enums",
+      "status": "PASS",
+      "violations": 0,
+      "expected_violations": 0,
+      "samples": []
+    },
+    {
+      "check_id": "FMT-invoice_line",
+      "category": "ID_FORMAT",
+      "description": "invoice_line: IDs/codes match naming convention",
+      "status": "PASS",
+      "violations": 0,
+      "expected_violations": 0,
+      "samples": []
+    },
+    {
+      "check_id": "UQ-invoice_line(invoice_id,line_no)",
+      "category": "UNIQUE",
+      "description": "invoice_line: (invoice_id, line_no) unique",
+      "status": "PASS",
+      "violations": 0,
+      "expected_violations": 0,
+      "samples": []
+    },
+    {
+      "check_id": "PK-invoice_audit",
+      "category": "PRIMARY_KEY",
+      "description": "invoice_audit: primary key (invoice_id) unique",
+      "status": "PASS",
+      "violations": 0,
+      "expected_violations": 0,
+      "samples": []
+    },
+    {
+      "check_id": "REQ-invoice_audit",
+      "category": "REQUIRED",
+      "description": "invoice_audit: required fields populated",
+      "status": "PASS",
+      "violations": 0,
+      "expected_violations": 0,
+      "samples": []
+    },
+    {
+      "check_id": "TYPE-invoice_audit",
+      "category": "TYPE",
+      "description": "invoice_audit: values have declared types",
+      "status": "PASS",
+      "violations": 0,
+      "expected_violations": 0,
+      "samples": []
+    },
+    {
+      "check_id": "ENUM-invoice_audit",
+      "category": "ENUM",
+      "description": "invoice_audit: values within allowed enums",
+      "status": "PASS",
+      "violations": 0,
+      "expected_violations": 0,
+      "samples": []
+    },
+    {
+      "check_id": "FMT-invoice_audit",
+      "category": "ID_FORMAT",
+      "description": "invoice_audit: IDs/codes match naming convention",
+      "status": "PASS",
+      "violations": 0,
+      "expected_violations": 0,
+      "samples": []
+    },
+    {
+      "check_id": "PK-line_audit",
+      "category": "PRIMARY_KEY",
+      "description": "line_audit: primary key (invoice_line_id) unique",
+      "status": "PASS",
+      "violations": 0,
+      "expected_violations": 0,
+      "samples": []
+    },
+    {
+      "check_id": "REQ-line_audit",
+      "category": "REQUIRED",
+      "description": "line_audit: required fields populated",
+      "status": "PASS",
+      "violations": 0,
+      "expected_violations": 0,
+      "samples": []
+    },
+    {
+      "check_id": "TYPE-line_audit",
+      "category": "TYPE",
+      "description": "line_audit: values have declared types",
+      "status": "PASS",
+      "violations": 0,
+      "expected_violations": 0,
+      "samples": []
+    },
+    {
+      "check_id": "ENUM-line_audit",
+      "category": "ENUM",
+      "description": "line_audit: values within allowed enums",
+      "status": "PASS",
+      "violations": 0,
+      "expected_violations": 0,
+      "samples": []
+    },
+    {
+      "check_id": "FMT-line_audit",
+      "category": "ID_FORMAT",
+      "description": "line_audit: IDs/codes match naming convention",
+      "status": "PASS",
+      "violations": 0,
+      "expected_violations": 0,
+      "samples": []
+    },
+    {
+      "check_id": "PK-audit_exception",
+      "category": "PRIMARY_KEY",
+      "description": "audit_exception: primary key (exception_id) unique",
+      "status": "PASS",
+      "violations": 0,
+      "expected_violations": 0,
+      "samples": []
+    },
+    {
+      "check_id": "REQ-audit_exception",
+      "category": "REQUIRED",
+      "description": "audit_exception: required fields populated",
+      "status": "PASS",
+      "violations": 0,
+      "expected_violations": 0,
+      "samples": []
+    },
+    {
+      "check_id": "TYPE-audit_exception",
+      "category": "TYPE",
+      "description": "audit_exception: values have declared types",
+      "status": "PASS",
+      "violations": 0,
+      "expected_violations": 0,
+      "samples": []
+    },
+    {
+      "check_id": "ENUM-audit_exception",
+      "category": "ENUM",
+      "description": "audit_exception: values within allowed enums",
+      "status": "PASS",
+      "violations": 0,
+      "expected_violations": 0,
+      "samples": []
+    },
+    {
+      "check_id": "FMT-audit_exception",
+      "category": "ID_FORMAT",
+      "description": "audit_exception: IDs/codes match naming convention",
+      "status": "PASS",
+      "violations": 0,
+      "expected_violations": 0,
+      "samples": []
+    },
+    {
+      "check_id": "PK-credit_note",
+      "category": "PRIMARY_KEY",
+      "description": "credit_note: primary key (credit_note_id) unique",
+      "status": "PASS",
+      "violations": 0,
+      "expected_violations": 0,
+      "samples": []
+    },
+    {
+      "check_id": "REQ-credit_note",
+      "category": "REQUIRED",
+      "description": "credit_note: required fields populated",
+      "status": "PASS",
+      "violations": 0,
+      "expected_violations": 0,
+      "samples": []
+    },
+    {
+      "check_id": "TYPE-credit_note",
+      "category": "TYPE",
+      "description": "credit_note: values have declared types",
+      "status": "PASS",
+      "violations": 0,
+      "expected_violations": 0,
+      "samples": []
+    },
+    {
+      "check_id": "ENUM-credit_note",
+      "category": "ENUM",
+      "description": "credit_note: values within allowed enums",
+      "status": "PASS",
+      "violations": 0,
+      "expected_violations": 0,
+      "samples": []
+    },
+    {
+      "check_id": "FMT-credit_note",
+      "category": "ID_FORMAT",
+      "description": "credit_note: IDs/codes match naming convention",
+      "status": "PASS",
+      "violations": 0,
+      "expected_violations": 0,
+      "samples": []
+    },
+    {
+      "check_id": "UQ-credit_note.carrier_credit_ref",
+      "category": "UNIQUE",
+      "description": "credit_note.carrier_credit_ref unique",
+      "status": "PASS",
+      "violations": 0,
+      "expected_violations": 0,
+      "samples": []
+    },
+    {
+      "check_id": "UQ-credit_note.exception_id",
+      "category": "UNIQUE",
+      "description": "credit_note.exception_id unique",
+      "status": "PASS",
+      "violations": 0,
+      "expected_violations": 0,
+      "samples": []
+    },
+    {
+      "check_id": "PK-shipment_event",
+      "category": "PRIMARY_KEY",
+      "description": "shipment_event: primary key (event_id) unique",
+      "status": "PASS",
+      "violations": 0,
+      "expected_violations": 0,
+      "samples": []
+    },
+    {
+      "check_id": "REQ-shipment_event",
+      "category": "REQUIRED",
+      "description": "shipment_event: required fields populated",
+      "status": "PASS",
+      "violations": 0,
+      "expected_violations": 0,
+      "samples": []
+    },
+    {
+      "check_id": "TYPE-shipment_event",
+      "category": "TYPE",
+      "description": "shipment_event: values have declared types",
+      "status": "PASS",
+      "violations": 0,
+      "expected_violations": 0,
+      "samples": []
+    },
+    {
+      "check_id": "ENUM-shipment_event",
+      "category": "ENUM",
+      "description": "shipment_event: values within allowed enums",
+      "status": "PASS",
+      "violations": 0,
+      "expected_violations": 0,
+      "samples": []
+    },
+    {
+      "check_id": "FMT-shipment_event",
+      "category": "ID_FORMAT",
+      "description": "shipment_event: IDs/codes match naming convention",
+      "status": "PASS",
+      "violations": 0,
+      "expected_violations": 0,
+      "samples": []
+    },
+    {
+      "check_id": "UQ-shipment_event(shipment_id,event_seq)",
+      "category": "UNIQUE",
+      "description": "shipment_event: (shipment_id, event_seq) unique",
+      "status": "PASS",
+      "violations": 0,
+      "expected_violations": 0,
+      "samples": []
+    },
+    {
+      "check_id": "PK-invoice_event",
+      "category": "PRIMARY_KEY",
+      "description": "invoice_event: primary key (event_id) unique",
+      "status": "PASS",
+      "violations": 0,
+      "expected_violations": 0,
+      "samples": []
+    },
+    {
+      "check_id": "REQ-invoice_event",
+      "category": "REQUIRED",
+      "description": "invoice_event: required fields populated",
+      "status": "PASS",
+      "violations": 0,
+      "expected_violations": 0,
+      "samples": []
+    },
+    {
+      "check_id": "TYPE-invoice_event",
+      "category": "TYPE",
+      "description": "invoice_event: values have declared types",
+      "status": "PASS",
+      "violations": 0,
+      "expected_violations": 0,
+      "samples": []
+    },
+    {
+      "check_id": "ENUM-invoice_event",
+      "category": "ENUM",
+      "description": "invoice_event: values within allowed enums",
+      "status": "PASS",
+      "violations": 0,
+      "expected_violations": 0,
+      "samples": []
+    },
+    {
+      "check_id": "FMT-invoice_event",
+      "category": "ID_FORMAT",
+      "description": "invoice_event: IDs/codes match naming convention",
+      "status": "PASS",
+      "violations": 0,
+      "expected_violations": 0,
+      "samples": []
+    },
+    {
+      "check_id": "UQ-invoice_event(invoice_id,event_seq)",
+      "category": "UNIQUE",
+      "description": "invoice_event: (invoice_id, event_seq) unique",
+      "status": "PASS",
+      "violations": 0,
+      "expected_violations": 0,
+      "samples": []
+    },
+    {
+      "check_id": "PK-exception_event",
+      "category": "PRIMARY_KEY",
+      "description": "exception_event: primary key (event_id) unique",
+      "status": "PASS",
+      "violations": 0,
+      "expected_violations": 0,
+      "samples": []
+    },
+    {
+      "check_id": "REQ-exception_event",
+      "category": "REQUIRED",
+      "description": "exception_event: required fields populated",
+      "status": "PASS",
+      "violations": 0,
+      "expected_violations": 0,
+      "samples": []
+    },
+    {
+      "check_id": "TYPE-exception_event",
+      "category": "TYPE",
+      "description": "exception_event: values have declared types",
+      "status": "PASS",
+      "violations": 0,
+      "expected_violations": 0,
+      "samples": []
+    },
+    {
+      "check_id": "ENUM-exception_event",
+      "category": "ENUM",
+      "description": "exception_event: values within allowed enums",
+      "status": "PASS",
+      "violations": 0,
+      "expected_violations": 0,
+      "samples": []
+    },
+    {
+      "check_id": "FMT-exception_event",
+      "category": "ID_FORMAT",
+      "description": "exception_event: IDs/codes match naming convention",
+      "status": "PASS",
+      "violations": 0,
+      "expected_violations": 0,
+      "samples": []
+    },
+    {
+      "check_id": "UQ-exception_event(exception_id,event_seq)",
+      "category": "UNIQUE",
+      "description": "exception_event: (exception_id, event_seq) unique",
+      "status": "PASS",
+      "violations": 0,
+      "expected_violations": 0,
+      "samples": []
+    },
+    {
+      "check_id": "PK-credit_note_event",
+      "category": "PRIMARY_KEY",
+      "description": "credit_note_event: primary key (event_id) unique",
+      "status": "PASS",
+      "violations": 0,
+      "expected_violations": 0,
+      "samples": []
+    },
+    {
+      "check_id": "REQ-credit_note_event",
+      "category": "REQUIRED",
+      "description": "credit_note_event: required fields populated",
+      "status": "PASS",
+      "violations": 0,
+      "expected_violations": 0,
+      "samples": []
+    },
+    {
+      "check_id": "TYPE-credit_note_event",
+      "category": "TYPE",
+      "description": "credit_note_event: values have declared types",
+      "status": "PASS",
+      "violations": 0,
+      "expected_violations": 0,
+      "samples": []
+    },
+    {
+      "check_id": "ENUM-credit_note_event",
+      "category": "ENUM",
+      "description": "credit_note_event: values within allowed enums",
+      "status": "PASS",
+      "violations": 0,
+      "expected_violations": 0,
+      "samples": []
+    },
+    {
+      "check_id": "FMT-credit_note_event",
+      "category": "ID_FORMAT",
+      "description": "credit_note_event: IDs/codes match naming convention",
+      "status": "PASS",
+      "violations": 0,
+      "expected_violations": 0,
+      "samples": []
+    },
+    {
+      "check_id": "UQ-credit_note_event(credit_note_id,event_seq)",
+      "category": "UNIQUE",
+      "description": "credit_note_event: (credit_note_id, event_seq) unique",
+      "status": "PASS",
+      "violations": 0,
+      "expected_violations": 0,
+      "samples": []
+    },
+    {
+      "check_id": "FK-rate_card.carrier_id",
+      "category": "FOREIGN_KEY",
+      "description": "rate_card.carrier_id -> carrier.carrier_id",
+      "status": "PASS",
+      "violations": 0,
+      "expected_violations": 0,
+      "samples": []
+    },
+    {
+      "check_id": "FK-rate_card_line.rate_card_id",
+      "category": "FOREIGN_KEY",
+      "description": "rate_card_line.rate_card_id -> rate_card.rate_card_id",
+      "status": "PASS",
+      "violations": 0,
+      "expected_violations": 0,
+      "samples": []
+    },
+    {
+      "check_id": "FK-rate_card_line.lane_id",
+      "category": "FOREIGN_KEY",
+      "description": "rate_card_line.lane_id -> lane.lane_id",
+      "status": "PASS",
+      "violations": 0,
+      "expected_violations": 0,
+      "samples": []
+    },
+    {
+      "check_id": "FK-rate_card_accessorial.rate_card_id",
+      "category": "FOREIGN_KEY",
+      "description": "rate_card_accessorial.rate_card_id -> rate_card.rate_card_id",
+      "status": "PASS",
+      "violations": 0,
+      "expected_violations": 0,
+      "samples": []
+    },
+    {
+      "check_id": "FK-rate_card_accessorial.accessorial_code",
+      "category": "FOREIGN_KEY",
+      "description": "rate_card_accessorial.accessorial_code -> accessorial.accessorial_code",
+      "status": "PASS",
+      "violations": 0,
+      "expected_violations": 0,
+      "samples": []
+    },
+    {
+      "check_id": "FK-shipment.supplier_id",
+      "category": "FOREIGN_KEY",
+      "description": "shipment.supplier_id -> supplier.supplier_id",
+      "status": "PASS",
+      "violations": 0,
+      "expected_violations": 0,
+      "samples": []
+    },
+    {
+      "check_id": "FK-shipment.carrier_id",
+      "category": "FOREIGN_KEY",
+      "description": "shipment.carrier_id -> carrier.carrier_id",
+      "status": "PASS",
+      "violations": 0,
+      "expected_violations": 0,
+      "samples": []
+    },
+    {
+      "check_id": "FK-shipment.lane_id",
+      "category": "FOREIGN_KEY",
+      "description": "shipment.lane_id -> lane.lane_id",
+      "status": "PASS",
+      "violations": 0,
+      "expected_violations": 0,
+      "samples": []
+    },
+    {
+      "check_id": "FK-shipment_leg.shipment_id",
+      "category": "FOREIGN_KEY",
+      "description": "shipment_leg.shipment_id -> shipment.shipment_id",
+      "status": "PASS",
+      "violations": 0,
+      "expected_violations": 0,
+      "samples": []
+    },
+    {
+      "check_id": "FK-weight_measurement.shipment_id",
+      "category": "FOREIGN_KEY",
+      "description": "weight_measurement.shipment_id -> shipment.shipment_id",
+      "status": "PASS",
+      "violations": 0,
+      "expected_violations": 0,
+      "samples": []
+    },
+    {
+      "check_id": "FK-delivery_record.shipment_id",
+      "category": "FOREIGN_KEY",
+      "description": "delivery_record.shipment_id -> shipment.shipment_id",
+      "status": "PASS",
+      "violations": 0,
+      "expected_violations": 0,
+      "samples": []
+    },
+    {
+      "check_id": "FK-freight_invoice.carrier_id",
+      "category": "FOREIGN_KEY",
+      "description": "freight_invoice.carrier_id -> carrier.carrier_id",
+      "status": "PASS",
+      "violations": 0,
+      "expected_violations": 0,
+      "samples": []
+    },
+    {
+      "check_id": "FK-freight_invoice.shipment_id",
+      "category": "FOREIGN_KEY",
+      "description": "freight_invoice.shipment_id -> shipment.shipment_id (only labelled UNKNOWN_SHIPMENT invoices may dangle)",
+      "status": "PASS",
+      "violations": 4,
+      "expected_violations": 4,
+      "samples": [
+        "FINV-2026-000134",
+        "FINV-2026-000249",
+        "FINV-2026-000319",
+        "FINV-2026-000533"
+      ]
+    },
+    {
+      "check_id": "FK-freight_invoice.original_invoice_id",
+      "category": "FOREIGN_KEY",
+      "description": "freight_invoice.original_invoice_id -> freight_invoice.invoice_id",
+      "status": "PASS",
+      "violations": 0,
+      "expected_violations": 0,
+      "samples": []
+    },
+    {
+      "check_id": "FK-invoice_line.invoice_id",
+      "category": "FOREIGN_KEY",
+      "description": "invoice_line.invoice_id -> freight_invoice.invoice_id",
+      "status": "PASS",
+      "violations": 0,
+      "expected_violations": 0,
+      "samples": []
+    },
+    {
+      "check_id": "FK-invoice_line.accessorial_code",
+      "category": "FOREIGN_KEY",
+      "description": "invoice_line.accessorial_code -> accessorial.accessorial_code",
+      "status": "PASS",
+      "violations": 0,
+      "expected_violations": 0,
+      "samples": []
+    },
+    {
+      "check_id": "FK-invoice_line.rate_card_id",
+      "category": "FOREIGN_KEY",
+      "description": "invoice_line.rate_card_id -> rate_card.rate_card_id",
+      "status": "PASS",
+      "violations": 0,
+      "expected_violations": 0,
+      "samples": []
+    },
+    {
+      "check_id": "FK-invoice_audit.invoice_id",
+      "category": "FOREIGN_KEY",
+      "description": "invoice_audit.invoice_id -> freight_invoice.invoice_id",
+      "status": "PASS",
+      "violations": 0,
+      "expected_violations": 0,
+      "samples": []
+    },
+    {
+      "check_id": "FK-line_audit.invoice_line_id",
+      "category": "FOREIGN_KEY",
+      "description": "line_audit.invoice_line_id -> invoice_line.invoice_line_id",
+      "status": "PASS",
+      "violations": 0,
+      "expected_violations": 0,
+      "samples": []
+    },
+    {
+      "check_id": "FK-line_audit.invoice_id",
+      "category": "FOREIGN_KEY",
+      "description": "line_audit.invoice_id -> freight_invoice.invoice_id",
+      "status": "PASS",
+      "violations": 0,
+      "expected_violations": 0,
+      "samples": []
+    },
+    {
+      "check_id": "FK-line_audit.exception_id",
+      "category": "FOREIGN_KEY",
+      "description": "line_audit.exception_id -> audit_exception.exception_id",
+      "status": "PASS",
+      "violations": 0,
+      "expected_violations": 0,
+      "samples": []
+    },
+    {
+      "check_id": "FK-audit_exception.invoice_id",
+      "category": "FOREIGN_KEY",
+      "description": "audit_exception.invoice_id -> freight_invoice.invoice_id",
+      "status": "PASS",
+      "violations": 0,
+      "expected_violations": 0,
+      "samples": []
+    },
+    {
+      "check_id": "FK-audit_exception.invoice_line_id",
+      "category": "FOREIGN_KEY",
+      "description": "audit_exception.invoice_line_id -> invoice_line.invoice_line_id",
+      "status": "PASS",
+      "violations": 0,
+      "expected_violations": 0,
+      "samples": []
+    },
+    {
+      "check_id": "FK-audit_exception.credit_note_id",
+      "category": "FOREIGN_KEY",
+      "description": "audit_exception.credit_note_id -> credit_note.credit_note_id",
+      "status": "PASS",
+      "violations": 0,
+      "expected_violations": 0,
+      "samples": []
+    },
+    {
+      "check_id": "FK-credit_note.carrier_id",
+      "category": "FOREIGN_KEY",
+      "description": "credit_note.carrier_id -> carrier.carrier_id",
+      "status": "PASS",
+      "violations": 0,
+      "expected_violations": 0,
+      "samples": []
+    },
+    {
+      "check_id": "FK-credit_note.invoice_id",
+      "category": "FOREIGN_KEY",
+      "description": "credit_note.invoice_id -> freight_invoice.invoice_id",
+      "status": "PASS",
+      "violations": 0,
+      "expected_violations": 0,
+      "samples": []
+    },
+    {
+      "check_id": "FK-credit_note.exception_id",
+      "category": "FOREIGN_KEY",
+      "description": "credit_note.exception_id -> audit_exception.exception_id",
+      "status": "PASS",
+      "violations": 0,
+      "expected_violations": 0,
+      "samples": []
+    },
+    {
+      "check_id": "FK-shipment_event.shipment_id",
+      "category": "FOREIGN_KEY",
+      "description": "shipment_event.shipment_id -> shipment.shipment_id",
+      "status": "PASS",
+      "violations": 0,
+      "expected_violations": 0,
+      "samples": []
+    },
+    {
+      "check_id": "FK-invoice_event.invoice_id",
+      "category": "FOREIGN_KEY",
+      "description": "invoice_event.invoice_id -> freight_invoice.invoice_id",
+      "status": "PASS",
+      "violations": 0,
+      "expected_violations": 0,
+      "samples": []
+    },
+    {
+      "check_id": "FK-exception_event.exception_id",
+      "category": "FOREIGN_KEY",
+      "description": "exception_event.exception_id -> audit_exception.exception_id",
+      "status": "PASS",
+      "violations": 0,
+      "expected_violations": 0,
+      "samples": []
+    },
+    {
+      "check_id": "FK-credit_note_event.credit_note_id",
+      "category": "FOREIGN_KEY",
+      "description": "credit_note_event.credit_note_id -> credit_note.credit_note_id",
+      "status": "PASS",
+      "violations": 0,
+      "expected_violations": 0,
+      "samples": []
+    },
+    {
+      "check_id": "DOM-RATECARD-EFFECTIVE",
+      "category": "DATE_ORDER",
+      "description": "Rate cards per carrier contiguous, non-overlapping, status consistent with as-of date",
+      "status": "PASS",
+      "violations": 0,
+      "expected_violations": 0,
+      "samples": []
+    },
+    {
+      "check_id": "DOM-RATELINE-TIERS",
+      "category": "ARITHMETIC",
+      "description": "Every rated lane/service has all 6 tiers, correct bounds, non-increasing rate per cwt",
+      "status": "PASS",
+      "violations": 0,
+      "expected_violations": 0,
+      "samples": []
+    },
+    {
+      "check_id": "DOM-LANE-BAND",
+      "category": "ARITHMETIC",
+      "description": "Lane distance_band derived from distance_miles",
+      "status": "PASS",
+      "violations": 0,
+      "expected_violations": 0,
+      "samples": []
+    },
+    {
+      "check_id": "DOM-SHIPMENT-DATES",
+      "category": "DATE_ORDER",
+      "description": "booked < ship <= promised; delivered after ship; delivered_at iff DELIVERED",
+      "status": "PASS",
+      "violations": 0,
+      "expected_violations": 0,
+      "samples": []
+    },
+    {
+      "check_id": "JOIN-SHIPMENT-RATE",
+      "category": "JOIN",
+      "description": "Every shipment joins to a valid rate card with rates for its lane and service",
+      "status": "PASS",
+      "violations": 0,
+      "expected_violations": 0,
+      "samples": []
+    },
+    {
+      "check_id": "DOM-LEG-CHAIN",
+      "category": "LIFECYCLE",
+      "description": "Legs contiguous, chained origin->destination, times ordered, status consistent with shipment",
+      "status": "PASS",
+      "violations": 0,
+      "expected_violations": 0,
+      "samples": []
+    },
+    {
+      "check_id": "DOM-WEIGHT",
+      "category": "ARITHMETIC",
+      "description": "dim_weight = ceil(pcs*L*W*H/divisor), billable = max(actual, dim); every shipment has a declared measurement; reweighs after pickup",
+      "status": "PASS",
+      "violations": 0,
+      "expected_violations": 0,
+      "samples": []
+    },
+    {
+      "check_id": "DOM-DELIVERY",
+      "category": "JOIN",
+      "description": "Delivery record exists iff shipment delivered; times and performance consistent",
+      "status": "PASS",
+      "violations": 0,
+      "expected_violations": 0,
+      "samples": []
+    },
+    {
+      "check_id": "DOM-INVOICE-ARITH",
+      "category": "ARITHMETIC",
+      "description": "Line amount = quantity x rate; billed_total = sum(lines); due_date = invoice_date + terms",
+      "status": "PASS",
+      "violations": 0,
+      "expected_violations": 0,
+      "samples": []
+    },
+    {
+      "check_id": "DOM-INVOICE-DATES",
+      "category": "DATE_ORDER",
+      "description": "delivered <= invoice_date <= received_date <= as-of",
+      "status": "PASS",
+      "violations": 0,
+      "expected_violations": 0,
+      "samples": []
+    },
+    {
+      "check_id": "DOM-INVOICE-STRUCT",
+      "category": "JOIN",
+      "description": "Line numbering, conditional fields, supplemental references, carrier consistency",
+      "status": "PASS",
+      "violations": 0,
+      "expected_violations": 0,
+      "samples": []
+    },
+    {
+      "check_id": "DUP-INVOICE-SHIPMENT",
+      "category": "DUPLICATE",
+      "description": "Repeated ORIGINAL invoices for a shipment are exactly the labelled DUPLICATE_INVOICE cases",
+      "status": "PASS",
+      "violations": 15,
+      "expected_violations": 15,
+      "samples": [
+        "FINV-2026-000010",
+        "FINV-2026-000139",
+        "FINV-2026-000163",
+        "FINV-2026-000317",
+        "FINV-2026-000330"
+      ]
+    },
+    {
+      "check_id": "DUP-INVOICE-LINES",
+      "category": "DUPLICATE",
+      "description": "Repeated charge lines within an invoice occur only on labelled SURCHARGE_DUPLICATED invoices",
+      "status": "PASS",
+      "violations": 14,
+      "expected_violations": 14,
+      "samples": [
+        "FINV-2026-000057",
+        "FINV-2026-000075",
+        "FINV-2026-000092",
+        "FINV-2026-000112",
+        "FINV-2026-000162"
+      ]
+    },
+    {
+      "check_id": "DOM-AUDIT-RECON",
+      "category": "ARITHMETIC",
+      "description": "Audit totals reconcile: expected = sum(line expected), variance = exceptions + tolerance, every exception linked",
+      "status": "PASS",
+      "violations": 0,
+      "expected_violations": 0,
+      "samples": []
+    },
+    {
+      "check_id": "DOM-CREDIT-RECON",
+      "category": "ARITHMETIC",
+      "description": "Credits reconcile to approved disputes: credit = reconciled + excess, reconciled <= approved, issued after approval",
+      "status": "PASS",
+      "violations": 0,
+      "expected_violations": 0,
+      "samples": []
+    },
+    {
+      "check_id": "LIFE-shipment",
+      "category": "LIFECYCLE",
+      "description": "shipment: transitions follow the state machine, events contiguous and ordered, current status = last event",
+      "status": "PASS",
+      "violations": 0,
+      "expected_violations": 0,
+      "samples": []
+    },
+    {
+      "check_id": "LIFE-freight_invoice",
+      "category": "LIFECYCLE",
+      "description": "freight_invoice: transitions follow the state machine, events contiguous and ordered, current status = last event",
+      "status": "PASS",
+      "violations": 0,
+      "expected_violations": 0,
+      "samples": []
+    },
+    {
+      "check_id": "LIFE-audit_exception",
+      "category": "LIFECYCLE",
+      "description": "audit_exception: transitions follow the state machine, events contiguous and ordered, current status = last event",
+      "status": "PASS",
+      "violations": 0,
+      "expected_violations": 0,
+      "samples": []
+    },
+    {
+      "check_id": "LIFE-credit_note",
+      "category": "LIFECYCLE",
+      "description": "credit_note: transitions follow the state machine, events contiguous and ordered, current status = last event",
+      "status": "PASS",
+      "violations": 0,
+      "expected_violations": 0,
+      "samples": []
+    },
+    {
+      "check_id": "GT-ISOLATION",
+      "category": "GROUND_TRUTH",
+      "description": "No label columns in operational/audit tables (labels live only in ground_truth/)",
+      "status": "PASS",
+      "violations": 0,
+      "expected_violations": 0,
+      "samples": []
+    },
+    {
+      "check_id": "GT-REFERENCES",
+      "category": "GROUND_TRUTH",
+      "description": "Every ground-truth row references an existing entity; expected charges cover all lines and invoices",
+      "status": "PASS",
+      "violations": 0,
+      "expected_violations": 0,
+      "samples": []
+    },
+    {
+      "check_id": "SQL-FK-CHECK",
+      "category": "FOREIGN_KEY",
+      "description": "SQLite PRAGMA foreign_key_check agrees with Python FK check (4 expected dangling refs)",
+      "status": "PASS",
+      "violations": 0,
+      "expected_violations": 0,
+      "samples": []
+    },
+    {
+      "check_id": "SQL-ROWCOUNT-JOIN",
+      "category": "JOIN",
+      "description": "SQLite row counts match exports; line->invoice->audit->rate card join is lossless",
+      "status": "PASS",
+      "violations": 0,
+      "expected_violations": 0,
+      "samples": []
+    }
+  ]
+}

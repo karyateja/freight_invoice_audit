@@ -1,0 +1,2 @@
+# Generated outputs are checksummed in output/*/manifest.json: keep them byte-exact on every OS.
+output/** -text
